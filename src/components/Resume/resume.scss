@@ -1,0 +1,102 @@
+@import '../../styles/variables';
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+.blurb:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $blue;
+  transition: width .3s;
+}
+.blurb:hover:after{
+  width: 100%;
+  background: $green;
+}
+.content {
+  display: block;
+  margin-top: 50px;
+}
+.content__tag-wrapper {
+  line-height: 1;
+  margin: 0 1.5rem 0 0;
+  position: absolute;
+}
+.content__inner {
+  margin-left: 110px;
+}
+.content__tag {
+  font-family: $smallCapsFont;
+  font-size: 30px;
+  color: $green;
+  margin: 0;
+}
+.experience__agency {
+  font-family: $contentCapsFont;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.experience__role {
+  font-family: $contentCapsFont;
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.experience__time {
+  font-family: $contentCapsFont;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: #a1a1b8;
+}
+.experience__description {
+  font-family: $contentCapsFont;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.education__name {
+  font-family: $contentCapsFont;
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.education__degree {
+  font-family: $contentCapsFont;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin: 0;
+}
+.education__location {
+  font-family: $contentCapsFont;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color: #a1a1b8;
+}
+
+@media only screen and (max-width: 512px)  { /* mobile */
+  .content__tag-wrapper {
+    position: relative;
+  }
+  .content__inner {
+    padding-top: 7px;
+    margin-left: 0px;
+  }
+}
